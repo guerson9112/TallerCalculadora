@@ -46,5 +46,5 @@ Resta=Button(cal, padx=16, bd=8,activebackground="green", fg="black", font=('ari
 btn1=Button(cal, padx=16, bd=8,activebackground="green", fg="black", font=('arial', 20, 'bold'),
             text="1", bg="blue", command=lambda:btnClick(1)).grid(row=3, column=0)
 
-btn8=Button(cal, padx=16, bd=8,activebackground="green", fg="black", font=('arial', 20, 'bold'),
+btn2=Button(cal, padx=16, bd=8,activebackground="green", fg="black", font=('arial', 20, 'bold'),
             text="2", bg="blue", command=lambda:btnClick(2)).grid(row=3, column=1)
