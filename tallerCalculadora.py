@@ -1,4 +1,5 @@
 from tkinter import *
+from math import *
 
 def btnClick(numbers):
     global operator
@@ -48,3 +49,16 @@ btn1=Button(cal, padx=16, bd=8,activebackground="green", fg="black", font=('aria
 
 btn2=Button(cal, padx=16, bd=8,activebackground="green", fg="black", font=('arial', 20, 'bold'),
             text="2", bg="blue", command=lambda:btnClick(2)).grid(row=3, column=1)
+#================================================================================
+
+#================================================================================
+Seno=Button(cal, padx=16,bd=8,fg="black",font=('arial',15,'bold'),
+            text="Sen",bg="white",command=lambda:btnClick("sin")).grid(row=5,column=0)
+Coseno=Button(cal,padx=16,bd=8,fg="black",font=('arial',15,'bold'),
+              text="Cos",bg="white",command=lambda:btnClick("cos")).grid(row=5,column=1)
+Parentesis1=Button(cal, padx=16,bd=8,fg="black",font=('arial',15,'bold'),
+            text="(",bg="white",command=lambda:btnClick("(")).grid(row=5,column=2)
+Parentesis2=Button(cal,padx=16,bd=8,fg="black",font=('arial',15,'bold'),
+              text=")",bg="white",command=lambda:btnClick(")")).grid(row=5,column=3)
+
+cal.mainloop()
