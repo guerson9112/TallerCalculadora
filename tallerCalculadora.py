@@ -1,21 +1,35 @@
 from tkinter import *
 
+def btnClick(numbers):
+    global operator
+    operator=operator + str(numbers)
+    text_Input.set(operator)
+def btnLimpiarTexto():
+    global operator
+    operator=""
+    text_Input.set("")
+def botonIgual():
+    global operator
+    sumup=str(eval(operator))
+    text_Input.set(sumup)
+    operator=""
+cal= Tk()
+cal.title("CALCULADORA")
+operator=""
+text_Input = StringVar()
 
-def Suma():
-    total = int(a.get()) + int(b.get())
-    print(total)
+txtDisplay = Entry(cal, font=('arial', 20, 'bold'), textvariable=text_Input, bd=30, insertwidth=4,
+                   bg="powder blue", justify='right').grid(columnspan=4)
 
+#================================================================================
+btn7=Button(cal, padx=16, bd=8,activebackground="green", fg="black", font=('arial', 20, 'bold'),
+            text="7", bg="blue", command=lambda:btnClick(7)).grid(row=1, column=0)
 
-    
-    
+btn8=Button(cal, padx=16, bd=8,activebackground="green", fg="black", font=('arial', 20, 'bold'),
+            text="8", bg="blue", command=lambda:btnClick(8)).grid(row=1, column=1)
 
-tk=Tk()
-valor1 = IntVar()
-valor2 = IntVar()
-a = Entry(tk, textvariable = valor1)
-b = Entry(tk, textvariable = valor2)
-a.pack()
-b.pack()
+btn9=Button(cal, padx=16, bd=8,activebackground="green", fg="black", font=('arial', 20, 'bold'),
+            text="9", bg="blue", command=lambda:btnClick(9)).grid(row=1, column=2)
 
-suma= Button(tk, text="SUMA", command = Suma)
-suma.pack()
+Suma=Button(cal, padx=16, bd=8,activebackground="green", fg="black", font=('arial', 20, 'bold'),
+            text="+", bg="blue", command=lambda:btnClick("+")).grid(row=1, column=3)
