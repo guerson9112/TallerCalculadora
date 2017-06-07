@@ -33,3 +33,18 @@ btn9=Button(cal, padx=16, bd=8,activebackground="green", fg="black", font=('aria
 
 Suma=Button(cal, padx=16, bd=8,activebackground="green", fg="black", font=('arial', 20, 'bold'),
             text="+", bg="blue", command=lambda:btnClick("+")).grid(row=1, column=3)
+#================================================================================
+btn4=Button(cal, padx=16, bd=8,activebackground="green", fg="black", font=('arial', 20, 'bold'),
+            text="4", bg="blue", command=lambda:btnClick(4)).grid(row=2, column=0)
+btn5=Button(cal, padx=16, bd=8,activebackground="green", fg="black", font=('arial', 20, 'bold'),
+            text="5", bg="blue", command=lambda:btnClick(5)).grid(row=2, column=1)
+btn6=Button(cal, padx=16, bd=8,activebackground="green", fg="black", font=('arial', 20, 'bold'),
+            text="6", bg="blue", command=lambda:btnClick(6)).grid(row=2, column=2)
+Resta=Button(cal, padx=16, bd=8,activebackground="green", fg="black", font=('arial', 20, 'bold'),
+            text="-", bg="blue", command=lambda:btnClick("+")).grid(row=2, column=3)
+#================================================================================
+btn1=Button(cal, padx=16, bd=8,activebackground="green", fg="black", font=('arial', 20, 'bold'),
+            text="1", bg="blue", command=lambda:btnClick(1)).grid(row=3, column=0)
+
+btn8=Button(cal, padx=16, bd=8,activebackground="green", fg="black", font=('arial', 20, 'bold'),
+            text="2", bg="blue", command=lambda:btnClick(2)).grid(row=3, column=1)
