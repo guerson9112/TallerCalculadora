@@ -1,5 +1,1 @@
-# Hola
-# Daniel Maldonado
-# Mario Montero
-# Ruben Maya
-# Bryan Vergara
+Calculadora en phyton
